@@ -1,0 +1,123 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('./assets/Ride\ Into\ Freedom.png'); /* Add your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for the Discount Bar */
+#discount-bar {
+    background-color: #006400; /* Dark green */
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+#discount-bar p {
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+#offer-text {
+    font-size: 20px;
+}
+
+#countdown-timer {
+    font-size: 22px;
+    color: #FFD700; /* Gold color for the countdown */
+}
+
+/* Header Styling - Positioned top left with dark blue theme */
+header {
+    position: absolute;
+    top: 80px;
+    left: 00px;
+    background-color: #003366; /* Darkish blue background */
+    color: white;
+    padding: 20px;
+    border-radius: 8px; /* Slight rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    text-align: left;
+    z-index: 999; /* Keep it on top */
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFD700; /* Gold color */
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Button Styling */
+.button {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #0d4d7b;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 400px;
+    right: 50px;
+}
+
+.button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+/* Main Content Section */
+.content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.content .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+    }
+    header p {
+        font-size: 16px;
+    }
+    .button {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+}
